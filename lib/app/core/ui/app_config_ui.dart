@@ -16,7 +16,7 @@ class AppConfigUi {
     900: Color(0xff000000),
   });
 
-  static const List<Color> gradientSplashPage = [
+  static const List<Color> gradientSplashAndLoginPage = [
     Color(0xff0092b9),
     Color(0xff0167b2),
   ];

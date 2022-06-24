@@ -30,7 +30,7 @@ class _SplashPageState extends State<SplashPage> {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: AppConfigUi.gradientSplashPage,
+            colors: AppConfigUi.gradientSplashAndLoginPage,
           ),
         ),
         child: Center(
