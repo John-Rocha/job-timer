@@ -9,7 +9,18 @@ class SplashPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Splash'),
       ),
-      body: Container(),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(12),
+            child: TextFormField(
+              decoration: InputDecoration(
+                label: Text('Input xxx'),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
