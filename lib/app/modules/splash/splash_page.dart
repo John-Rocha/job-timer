@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:job_timer/app/core/ui/job_timer_icons.dart';
+import 'package:job_timer/app/core/consts.dart';
+import 'package:job_timer/app/core/ui/app_config_ui.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -7,26 +8,15 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Splash'),
-      ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(12),
-            child: TextFormField(
-              decoration: const InputDecoration(
-                label: Text('Input xxx'),
-              ),
-            ),
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: AppConfigUi.gradientSplashPage,
           ),
-          ElevatedButton(
-            onPressed: () {},
-            child: const Text('Salvar'),
-          ),
-          const Icon(JobTimerIcons.angle_double_right),
-          const Icon(JobTimerIcons.ok_circled2)
-        ],
+        ),
+        child: Center(
+          child: Image.asset(kAssetLogo),
+        ),
       ),
     );
   }

@@ -16,6 +16,11 @@ class AppConfigUi {
     900: Color(0xff000000),
   });
 
+  static const List<Color> gradientSplashPage = [
+    Color(0xff0092b9),
+    Color(0xff0167b2),
+  ];
+
   static final ThemeData theme = ThemeData(
     primarySwatch: _primarySwatch,
     primaryColor: const Color(0XFF0066B0),
