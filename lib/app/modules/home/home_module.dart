@@ -13,7 +13,7 @@ class HomeModule extends Module {
   final List<ModularRoute> routes = [
     ChildRoute(
       '/',
-      child: (context, args) => HomePage(),
+      child: (context, args) => const HomePage(),
     )
   ];
 }
